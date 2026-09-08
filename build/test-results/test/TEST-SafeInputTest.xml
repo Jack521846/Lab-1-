@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SafeInputTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-09-08T01:47:04.766Z" hostname="JACKS-LAPTOP" time="0.042">
+  <properties/>
+  <testcase name="testMethodsExist()" classname="SafeInputTest" time="0.027"/>
+  <testcase name="testScannerConstructor()" classname="SafeInputTest" time="0.001"/>
+  <testcase name="testConstructor()" classname="SafeInputTest" time="0.001"/>
+  <system-out><![CDATA[
+Test: 
+Test: 
+Test: 
+Test[1-10]: 
+Test[1-10]: 
+Test [Y/N] 
+Test: ]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

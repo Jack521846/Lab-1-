@@ -34,7 +34,7 @@ public class Product_Reader
                 for (Product p : products)
                 {
                     System.out.printf(" %-15s %-25s %-10s $%-10.2f%n",
-                            p.getname(),p.getdescription(),p.getID(),p.getcost());
+                            p.getName(),p.getDescription(),p.getID(),p.getCost());
                 }
             } catch (IOException e)
             {

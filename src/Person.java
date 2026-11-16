@@ -5,7 +5,8 @@ public class Person {
     private String title;
     private int yob;
 
-    public Person(String firstName, String lastName, String id, String title, int yob) {
+    public Person(String firstName, String lastName, String id, String title, int yob)
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
@@ -13,7 +14,16 @@ public class Person {
         this.yob = yob;
     }
 
-    // Getters (matching tests and other files)
+        public void setFirstName(String firstName) { this.firstName = firstName; }
+        public void setLastName(String lastName) { this.lastName = lastName; }
+        public void setTitle(String title) { this.title = title; }
+
+
+        public String fullName() { return firstName + " " + lastName; }
+
+
+
+
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
     public String getID() { return id; }
@@ -22,16 +32,9 @@ public class Person {
     public int getYOB() { return yob; }
     public int getYob() { return yob; }
 
-    // Setters
-    public void setFirstName(String firstName) { this.firstName = firstName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
-    public void setTitle(String title) { this.title = title; }
-
-    // Convenience methods
-    public String fullName() { return firstName + " " + lastName; }
     public String formalName() { return title + " " + firstName + " " + lastName; }
 
-    // Return age as String to match tests
+
     public String getAge() {
         int currentYear = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
         return String.valueOf(currentYear - this.yob);
@@ -41,7 +44,7 @@ public class Person {
         return String.valueOf(year - this.yob);
     }
 
-    // CSV format - match test expectation (note leading space)
+
     public String toCSV() {
         return " " + firstName + ", " + lastName + "," + id + ", " + title + ", " + yob;
     }
